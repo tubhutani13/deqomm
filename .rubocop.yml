@@ -6,3 +6,6 @@ Style/Documentation:
 
 Style/HashSyntax:
   Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false

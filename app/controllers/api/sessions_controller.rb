@@ -16,7 +16,7 @@ module Api
     private
 
     def encode_token(payload)
-      JWT.encode(payload, 'your_secret_key', 'HS256')
+      JWT.encode(payload, ENV.fetch('JWT_SECRET_KEY'), 'HS256')
     end
   end
 end
